@@ -3,7 +3,7 @@ from charms.reactive import when
 from charms.reactive import set_state
 
 
-@when('apache.project.available', 'mysql.available')
+@when('apache.available', 'mysql.available')
 def setup_vanilla(mysql):
     render(source='vanilla_config.php',
            target='/var/www/vanilla/conf/config.php',
