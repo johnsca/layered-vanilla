@@ -1,0 +1,11 @@
+packages:
+    - 'php5-mysql'
+    - 'php5-gd'
+sites:
+    vanilla:
+        listen: '*:80'
+        options: 'Indexes FollowSymLinks MultiViews'
+        source:
+            url: https://github.com/vanillaforums/Garden/archive/Vanilla_2.0.18.8.tar.gz
+            hash: acf61a7ffca9359c1e1d721777182e51637be59744925935291801ccc8e8fd55
+            hash_type: sha256
